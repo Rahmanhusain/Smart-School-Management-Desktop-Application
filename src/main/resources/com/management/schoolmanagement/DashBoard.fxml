@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.management.schoolmanagement.DashBoardController">
+    <top>
+        <AnchorPane prefHeight="42.0" prefWidth="900.0" style="-fx-background-color: #72FFFF;" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#editschooldetails" text="📝 Edit School Details" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="8.0" />
+                <Button layoutX="147.0" layoutY="8.0" mnemonicParsing="false" onAction="#EditFeestructure" text="📝 Edit Fee Structure" AnchorPane.leftAnchor="147.0" AnchorPane.topAnchor="8.0" />
+                <Button layoutX="823.0" layoutY="8.0" mnemonicParsing="false" onAction="#reload" text="🔃 Reload" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0" />
+            </children>
+        </AnchorPane>
+    </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="146.0" prefWidth="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="450.0">
+               <children>
+                  <Label text="School ID :">
+                     <VBox.margin>
+                        <Insets left="8.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scid" text="School Id">
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="School Name :">
+                     <VBox.margin>
+                        <Insets left="8.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name" text="SchoolName">
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Address :">
+                     <VBox.margin>
+                        <Insets left="8.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="address" text="2/80-85">
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="450.0" prefHeight="146.0" prefWidth="450.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label text="Opening Date :">
+                     <VBox.margin>
+                        <Insets left="8.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date" text="01-01-2002">
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Principal Name :">
+                     <VBox.margin>
+                        <Insets left="8.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pname" text="Dr.Principal">
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutY="156.0" prefHeight="348.0" prefWidth="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="449.6">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="18.0" prefWidth="459.0" text="More Details :" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tstudent" text="Total Student : 0">
+                     <VBox.margin>
+                        <Insets left="8.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="tteacher" text="Total Teachers : 0">
+                     <VBox.margin>
+                        <Insets left="8.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="tbooks" text="Total Books in Library : 0">
+                     <VBox.margin>
+                        <Insets left="8.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="tcomputers" text="Total Computers in Lab : 0">
+                     <VBox.margin>
+                        <Insets left="8.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="tequipment" text="Total Equipment in Science Lab : 0">
+                     <VBox.margin>
+                        <Insets left="8.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="450.0" layoutY="156.0" prefHeight="348.0" prefWidth="450.0" AnchorPane.leftAnchor="449.6" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label text="Fee Structure Class wise :">
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="stucturetblview" prefHeight="348.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="Class" prefWidth="51.200013756752014" text="Class" />
+                      <TableColumn fx:id="fee" prefWidth="99.20003509521484" text="Fee" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="8.0" right="8.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.management.schoolmanagement.Teachercontroller">
+    <top>
+        <AnchorPane prefHeight="42.0" prefWidth="900.0" style="-fx-background-color: #72FFFF;" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#AddTeacher" text=" + Add Teacher" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="8.0" />
+                <Button layoutX="120.0" layoutY="9.0" mnemonicParsing="false" onAction="#EditTeachers" text="Edit Details" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="8.0" />
+                <Button layoutX="794.0" layoutY="9.0" mnemonicParsing="false" onAction="#SearchTeacher" text="🔍Search" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="9.0" />
+                <TextField fx:id="searchbox" layoutX="637.0" layoutY="9.0" promptText="Enter Teacher Name/ ID :" AnchorPane.rightAnchor="113.4" AnchorPane.topAnchor="9.0" />
+                <Label layoutX="544.0" layoutY="13.0" text="Search Teacher" AnchorPane.rightAnchor="270.4">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <Button layoutX="864.0" layoutY="8.0" mnemonicParsing="false" onAction="#AllTeachers" text="🔃" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="9.0" />
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <TableView fx:id="Teachertblview" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="Id" prefWidth="144.8000122308731" text="Teacher ID" />
+                <TableColumn fx:id="name" prefWidth="154.4000244140625" text="Name" />
+                <TableColumn fx:id="dob" prefWidth="92.79998779296875" text="D.O.B" />
+                <TableColumn fx:id="sex" prefWidth="60.79998779296875" text="SEX" />
+                <TableColumn fx:id="subject" prefWidth="119.20004272460938" text="Subject" />
+                <TableColumn fx:id="classteacher" prefWidth="82.4000244140625" text="Class Teacher" />
+                <TableColumn fx:id="qualification" prefWidth="168.0" text="Qualification" />
+                <TableColumn fx:id="salary" text="Salary" />
+                <TableColumn fx:id="joindate" prefWidth="96.0001220703125" text="Joining Date" />
+                <TableColumn fx:id="leave" prefWidth="100.0" text="Leaving Date" />
+            </columns>
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+        </TableView>
+    </center>
+</BorderPane>
