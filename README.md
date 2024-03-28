@@ -24,17 +24,24 @@ To install the Smart School Management System, follow these steps:
 ## Screenshots
    
    ![Screenshot 2024-03-28 091800](https://github.com/Rahmanhusain/Smart-School-Management-Desktop-Application/assets/157372566/19da9c62-0022-4a27-a3b9-b06b5219471a)
+   
    ![Screenshot 2024-03-28 091836](https://github.com/Rahmanhusain/Smart-School-Management-Desktop-Application/assets/157372566/e24e8c15-df98-409e-8360-b92b8aebdd86)
+   
    ![Screenshot 2024-03-28 091901](https://github.com/Rahmanhusain/Smart-School-Management-Desktop-Application/assets/157372566/97cd787d-af40-4094-a8cb-aea6c99a0bde)
+   
    ![Screenshot 2024-03-28 091943](https://github.com/Rahmanhusain/Smart-School-Management-Desktop-Application/assets/157372566/b826bc17-25e1-45de-b30a-c851c0137294)
+   
    ![Screenshot 2024-03-28 092121](https://github.com/Rahmanhusain/Smart-School-Management-Desktop-Application/assets/157372566/255cadcb-0a87-4dae-8ad3-d3d05bda79e1)
+   
    ![Screenshot 2024-03-28 092435](https://github.com/Rahmanhusain/Smart-School-Management-Desktop-Application/assets/157372566/dd7bef0c-fd0f-40d7-af3d-5a107bfb871b)
+   
    ![Screenshot 2024-03-28 092848](https://github.com/Rahmanhusain/Smart-School-Management-Desktop-Application/assets/157372566/510a930f-e9f4-4f30-acae-caa74fee1237)
+   
    ![Screenshot 2024-03-28 092955](https://github.com/Rahmanhusain/Smart-School-Management-Desktop-Application/assets/157372566/86830f3d-2af2-4c70-8770-ed53a8ac7bde)
 
 ## Requirements
-1. **For user-Installer setup file and windows 7 or above.
-2. **For-Developers-JDK 19 or above.
+1. For user-Installer setup file and windows 7 or above.
+2. For-Developers-JDK 19 or above.
 
 ## Future Plans
 I would like to add some security features to the program and automatic data backup to cloud to secure school data to increase reliability of the software.
