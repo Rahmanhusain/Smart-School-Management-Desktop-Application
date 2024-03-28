@@ -19,6 +19,7 @@ To install the Smart School Management System, follow these steps:
 1. Download the installation file from:
    https://drive.google.com/uc?export=download&id=1J_OP4iWkOM60wg_YxCmJB58Zm_UdssI6
 2. Clone the repository to your local machine:
+   
    ```
    git clone https://github.com/Rahmanhusain/Smart-School-Management-Desktop-Application.git
    ```
